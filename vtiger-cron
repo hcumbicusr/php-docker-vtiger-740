@@ -1,0 +1,2 @@
+# Vtigercron
+*/15 * * * * /var/www/html/vtiger740/cron/vtigercron.sh

@@ -1,0 +1,15 @@
+.env
+docker-mysql-db/*
+test/templates_c/v7/*
+storage/*
+!storage/.htaccess
+!storage/vtiger.txt
+user_privileges/*
+!user_privileges/audit_trail.php
+!user_privileges/default_module_view.php
+!user_privileges/enable_backup.php
+!user_privileges/index.html
+!user_privileges/sharing_privileges_1.php
+!user_privileges/user_privileges_1.php
+logs/*
+!logs/.htaccess
