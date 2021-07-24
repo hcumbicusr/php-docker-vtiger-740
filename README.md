@@ -3,7 +3,7 @@ Vtiger CRM
 [Es]
 
 - Fecha de descarga del código fuente: 21/07/2021 (DD/MM/YYYY)
-- Fuente: https://www.vtiger.com/es/open-source-crm/download-open-source/#download
+- Fuente: https://ufpr.dl.sourceforge.net/project/vtigercrm/vtiger%20CRM%207.4.0/Core%20Product/vtigercrm7.4.0.tar.gz
 - Versión: 7.4.0
 - Autor: hcumbicusr@gmail.com
 
