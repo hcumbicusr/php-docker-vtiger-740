@@ -43,15 +43,13 @@ Despliegue de Docker:
 - IMPORTANTE: Solo ejecutar la primera vez que se despliega el contenedor
 - Esto abrirá la consola del servidor MySql
 > docker exec -it php-docker-vtiger-740_db_1 bash
-- Ahora debemos restaurar la BD inicial de vtiger
-_mysql_#> mysql -uroot -p[MYSQL_ROOT_PASSWORD] [MYSQL_DATABASE] < /backup/db_vtiger_740_20210724.sql
+- Ahora debemos restaurar la BD inicial de vtiger, en la consola de mysql
+> mysql -uroot -p[MYSQL_ROOT_PASSWORD] [MYSQL_DATABASE] < /backup/db_vtiger_740_20210724.sql
 - Cerramos la consola
-_mysql_#> exit
+> exit
 
 - IMPORTANTE: Solo ejecutar la primera vez que se despliega el contenedor
-- El siguiente comando genera el $application_unique_key del archivo config.inc.php y el secret-key csrf de vtiger
-- Reemplazará el valor {APPLICATION_UNIQUE_KEY} en el archivo config.inc.php
-- Eliminará y creará el archivo config.csrf-secret.php
+- El siguiente comando genera el $application_unique_key del archivo config.inc.php y el secret-key csrf de vtiger, reemplazará el valor {APPLICATION_UNIQUE_KEY} en el archivo config.inc.php y creará el archivo config.csrf-secret.php
 > doker-compose run web php -f /var/www/html/vtiger740/generate_key.php
 
 [5] Acceso a Vtiger desde el navegador
